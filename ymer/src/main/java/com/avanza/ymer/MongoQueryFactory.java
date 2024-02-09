@@ -101,7 +101,7 @@ class MongoQueryFactory {
 		return pd.getReadMethod() == null
 				|| pd.getReadMethod().getDeclaringClass() == Object.class
 				|| pd.getWriteMethod() == null
-				|| pd.getName().equals("versionID");
+				|| "versionID".equals(pd.getName());
 	}
 
 }
